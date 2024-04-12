@@ -1,0 +1,72 @@
+@import url('./reset.less');
+@import url('./vars.less');
+
+.desk {
+  &-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+
+    @media @s {
+      max-width: 320px;
+    }
+  }
+
+  &-step {
+    &__wrapper {
+      margin-bottom: 20px;
+    }
+
+    &__title {
+      margin-inline-end: 8px;
+      margin-bottom: 0 !important;
+    }
+  }
+
+  &-field {
+    &__wrapper {
+      margin-bottom: 20px;
+      max-width: 400px;
+
+      &-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+
+        &-btn {
+          width: 40px;
+          height: 40px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border: 1px solid black;
+
+          &.active {
+            background-color: #ffd205;
+            border: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+#root {
+  background: -webkit-linear-gradient(7deg, #fd984c, #ff4c81, #bd45da);
+  background: linear-gradient(7deg, #fd984c, #ff4c81, #bd45da);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.desc-title {
+  margin-bottom: 20px;
+}
+
+.ant-typography {
+  margin-bottom: 0 !important;
+}
